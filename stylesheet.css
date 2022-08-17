@@ -1,0 +1,164 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    background-color: rgb(222, 219, 217);
+    color:rgb(54, 54, 54);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.header-logo{
+    font-family:'Pacifico', cursive;
+    font-style:normal;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding:30px 70px;
+    cursor: pointer;
+}
+
+
+div .humberger-menu {
+    display: none;
+    align-content: space-around;
+    padding: 8px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 5px;
+  }
+  
+div .humberger-menu div {
+    margin-top: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+  
+div #menu {
+    list-style: none;
+    display: flex;
+  }
+  
+div #menu li {
+    cursor: pointer;
+    padding: 25px;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+  }
+  
+div #menu li:hover {
+    color: white;
+    background-color: rgb(54, 54, 54);
+  }
+
+.top-wrapper{
+    padding: 180px 100px;
+    color:rgb(48, 48, 48);
+    background-image:url(humphrey-muleba-dDp-6pXrYik-unsplash.jpg);
+    background-size: cover;
+    text-align: left;
+}
+
+.container{
+    max-width: 900px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-wrapper h1{
+    opacity: 0.8;
+    font-size: 45px;
+    padding: 10px 0px;
+    margin: 0 auto;
+}
+
+.top-wrapper p{
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+.btn{
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+    display:inline-block;
+    opacity:0.8;
+    border-radius:4px;
+}
+
+.btn:hover{
+    opacity:1;
+  }
+
+.registered{
+    background-color: rgb(109, 105, 105);
+}
+
+a.registered{
+    text-decoration: none;
+}
+
+.btn-wrapper i{
+    margin-right: 8px;
+}
+
+.btn-wrapper{
+    margin-top:15px;
+    margin-bottom:15px;
+  }
+
+.fa{
+    margin-right:5px;
+  }
+
+#menu.active {
+    display: flex;
+}
+
+@media screen and (max-width: 769px) {
+    div {
+      position: relative;
+    }
+  
+    div #menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      z-index: 99;
+      top: 100%;
+      left: 0%;
+      right: 0;
+      bottom: 0;
+      background-color: rgb(222, 219, 217);
+      height: 100%;
+    }
+  
+    div li {
+      background-color: rgb(222, 219, 217);
+    }
+  
+    div .humberger-menu {
+      cursor: pointer;
+      display: block;
+    }
+}
